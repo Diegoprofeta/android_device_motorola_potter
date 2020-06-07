@@ -253,7 +253,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.radio.add_power_save=1 \
     persist.vendor.dpm.feature=0 \
     persist.vendor.radio.force_on_dc=true \
-    persist.radio.custom_ecc=1 \
+B    persist.radio.custom_ecc=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
     persist.vendor.radio.ignore_dom_time=10 \
     persist.radio.ignore_dom_time=10 \
@@ -343,3 +343,6 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.surface_flinger.vsync_event_phase_offset_ns=2000000 \
     ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 
+# Fast App Launch
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.device_config.runtime_native.usap_pool_enabled=true
